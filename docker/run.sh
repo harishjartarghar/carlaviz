@@ -14,6 +14,8 @@ echo -e "CARLAVIZ_HOST_IP=${CARLAVIZ_HOST_IP}" >> /home/carla/.env
 echo "Frontend server application launching"
 sleep 2
 cd ./frontend-server/
+npm install & 
+sleep 30
 node index.js &
 sleep 10
 echo "Frontend server application launched"
@@ -22,7 +24,7 @@ echo "Frontend server application launched"
 echo "Launching frontend"
 
 sleep 2
-cd ./frontend/
+cd ../frontend/
 yarn start &
 sleep 10
 echo "Frontend launched. Please open your browser"
