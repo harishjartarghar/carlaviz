@@ -8,10 +8,7 @@ const SERVER_PORT = 4000;
 
 var app = express();
 
-// app.use(cors({
-// 	origin: 'http://0.0.0.0:8080'
-//   }));
-
+app.use(cors());
 app.use(bodyparser.json());
 
 

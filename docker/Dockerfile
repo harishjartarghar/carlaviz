@@ -38,6 +38,10 @@ RUN cd /home/carla && \
   echo `git describe --tags` && \
   bash ./setup/setup.sh
 
+RUN cd /home/carla/carlaviz/frontend-server && \
+    rm -rf node_modules && \
+    npm install
+
 EXPOSE 8080-8081
 EXPOSE 8089
 
