@@ -19,7 +19,7 @@ app.post("/start",function(req,res){
 	
 
 	 //Running the run.sh
-	const myShellScript = exec('sh run.sh backend.sh');
+	const myShellScript = exec('sh backend.sh');
 	myShellScript.stdout.on('data', (data)=>{
     	console.log(data); 
     	// do whatever you want here with data
