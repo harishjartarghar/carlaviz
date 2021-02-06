@@ -4,7 +4,7 @@ const exec = require("child_process").exec;
 const spawn = require("child_process").spawn;
 var cors = require('cors');
 
-const SERVER_PORT = 5000;
+const SERVER_PORT = 7000;
 
 var app = express();
 
@@ -33,9 +33,8 @@ app.post("/start",function(req,res){
 });
 
 app.post("/stopEngine",function(req,res){
-	//var stop = req.body.valStop;
 
-	//Stopping the engine
+	
 
 });
 

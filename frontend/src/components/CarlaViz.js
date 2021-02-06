@@ -105,7 +105,7 @@ class CarlaViz extends PureComponent {
   };
 
   escFunction=(event)=>{
-    axios.post("http://202.62.92.9:5000/movement",{data:event.key},{headers: {'Content-Type': 'application/json'}})
+    axios.post("http://localhost:5000/movement",{data:event.key},{headers: {'Content-Type': 'application/json'}})
     .then((res)=>{
 
     })
