@@ -27,7 +27,7 @@ class Carla extends Component {
        });
       }
           ,
-            10000
+            15000
         )
 
         
