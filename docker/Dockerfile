@@ -34,7 +34,7 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
   apt-get update && apt-get install -y yarn
 
 RUN cd /home/carla && \
-  git clone https://github.com/harishjartarghar/carlaviz.git && cd carlaviz && \
+  git clone -b local --single-branch https://github.com/harishjartarghar/carlaviz.git && cd carlaviz && \
   echo `git describe --tags` && \
   bash ./setup/setup.sh
 
